@@ -1,25 +1,19 @@
-# DE-TORT
+# Gericht
 
 ## 📝 Project description
 
-A website for the **De-Tort** service company.
+A website for the **Gericht** service company.
 
-- **Project name**: De-Tort
+- **Project name**: Gericht
 - **Project goals**:
   - Creating a positive personal brand image
   - Attracting new customers / partners
   - Promoting services through website
   - Informing consumers
-- **Target audience**:
-  - **Age**: 20-45+
-  - **Gender**: Female/Male
-- **Product scope**: Development of a multi-page website for the De-Tort company,
-  whose main field of activity is creating cakes, cookies, cheesecake, cupcake,
-  sweet sets and other sweets for personal consumption, parties and events.
 
 ## 🛠️ Creating the project
 
-**De-Tort** is a [Next.js](https://nextjs.org/) project bootstrapped with
+**Gericht** is a [Next.js](https://nextjs.org/) project bootstrapped with
 [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ### Features
@@ -48,7 +42,7 @@ A website for the **De-Tort** service company.
 
 ### Supported Languages
 
-- Ukrainian
+- English
 
 ### Design
 
@@ -77,7 +71,6 @@ is a list of more common components and their API.
   - Next.js (app router)
   - TypeScript
   - Tailwind CSS
-  - Strapi
 
 - **Additional dependencies**:
 
@@ -100,14 +93,3 @@ To deploy this project, you need to perform the following steps:
    the project on the local server.
 5. **Deploy**: To deploy this project to a production server, use hosting
    platforms such as Vercel, Netlify, or others.
-
-## ☎️ Contacts
-
-**SoftRyzen** is ready to answer your questions and provide additional
-information:
-
-- **Website**: [softryzen.com](https://softryzen.com/)
-- **Phone**: <a href="tel:+380979769625">+380979769625</a>
-- **Email**: [services@softryzen.com](mailto:services@softryzen.com)
-- **YouTube channel**:
-  [https://www.youtube.com](https://www.youtube.com/watch?v=_X7NLwgdfgI)
