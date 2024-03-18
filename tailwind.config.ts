@@ -14,11 +14,11 @@ const config: Config = {
     screens: {
       sm: "480px",
       md: "768px",
-      xl: "1280px",
+      xl: "1440px",
 
       smOnly: { max: "767.98px" },
       mdOnly: { min: "768px", max: "1279.98px" },
-      notXl: { max: "1279.98px" },
+      notXl: { max: "1439.98px" },
     },
     // THEME
     extend: {
@@ -29,7 +29,7 @@ const config: Config = {
           DEFAULT: "1.25rem",
           sm: "1.25rem",
           md: "2rem",
-          xl: "8.75rem",
+          xl: "4.375rem",
         },
       },
       // COLORS
