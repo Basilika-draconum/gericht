@@ -6,10 +6,11 @@ export const SectionTitle: React.FC<SectionTitleProps> = ({
   title,
   subtitle,
   start,
+  className = "",
 }) => {
   return (
     <div
-      className={`flex flex-col gap-2 ${start ? "items-start" : "items-center"}`}
+      className={`flex flex-col gap-2 ${start ? "items-start" : "items-center"} ${className}`}
     >
       <p className="text-text-white font-upright text-[23px] leading-[1.3] tracking-[0.92px] font-bold">
         {subtitle}

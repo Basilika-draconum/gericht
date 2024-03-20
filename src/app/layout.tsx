@@ -41,7 +41,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="uk">
-      <body className={`${upright.className} ${sans.className}`}>
+      <body
+        className={`${upright.className} ${sans.className} bg-bg-main flex flex-col min-h-screen`}
+      >
         <main>{children}</main>
       </body>
     </html>
