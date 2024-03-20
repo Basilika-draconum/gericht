@@ -34,14 +34,16 @@ const config: Config = {
       },
       // COLORS
       colors: {
-        "color-bg": {
+        bg: {
           white: "#FFFFFF",
           main: "#0C0B08",
           accent: "#DCCA87",
+          hoveraccent: "#DEC152",
         },
-        "color-text": {
+        text: {
           white: "#FFFFFF",
           accent: "#DCCA87",
+          addaccent: "#F5EFDB",
           secondary: "#AAAAAA",
           extra: "#0C0C0C",
         },
@@ -53,7 +55,7 @@ const config: Config = {
       },
       // TRANSITION
       transitionDuration: {
-        DEFAULT: "300ms",
+        DEFAULT: "400ms",
       },
       transitionTimingFunction: {
         DEFAULT: "cubic-bezier(0.4, 0, 0.2, 1)",
