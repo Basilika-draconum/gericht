@@ -6,3 +6,9 @@
   padding-top: 152px;
   padding-bottom: 152px;
 }
+.section-bg {
+  background-image: url("/images/background.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

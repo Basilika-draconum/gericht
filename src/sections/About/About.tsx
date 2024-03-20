@@ -8,7 +8,7 @@ import data from "@/data/about.json";
 export const About: React.FC = () => {
   const { title, subtitle, description, button, image1, image2 } = data;
   return (
-    <section className="section">
+    <section className="section section-bg">
       <div className="container">
         <div className="flex gap-[143px]">
           <Image
