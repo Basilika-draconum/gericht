@@ -3,8 +3,16 @@
 @tailwind utilities;
 
 .section {
-  padding-top: 152px;
-  padding-bottom: 152px;
+  padding-top: 62px;
+  padding-bottom: 62px;
+  @media screen and (min-width: 768px) {
+    padding-top: 102px;
+    padding-bottom: 102px;
+  }
+  @media screen and (min-width: 1440px) {
+    padding-top: 152px;
+    padding-bottom: 152px;
+  }
 }
 .section-bg {
   background-image: url("/images/background.png");

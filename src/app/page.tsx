@@ -1,4 +1,5 @@
 import { About } from "@/sections/About";
+import { Contacts } from "@/sections/Contacts";
 import { Reservation } from "@/sections/Reservation";
 
 export default async function Home() {
@@ -6,6 +7,7 @@ export default async function Home() {
     <>
       <Reservation />
       <About />
+      <Contacts />
     </>
   );
 }
