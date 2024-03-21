@@ -1,0 +1,12 @@
+{
+  "title": "Find Us",
+  "subtitle": "Contact",
+  "description": "Lane Ends Bungalow, Whatcroft Hall Lane, Rudheath, CW9 7SG",
+  "schedule": {
+    "title": "Opening Hours",
+    "days": "Mon - Fri: 10:00 am - 02:00 am",
+    "weekend": "Sat - Sun: 10:00 am - 03:00 am"
+  },
+  "button": "Visit Us",
+  "image1x": { "alt": "coctail", "src": "/images/contact-coctail@1x.jpg" }
+}

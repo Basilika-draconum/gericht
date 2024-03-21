@@ -10,13 +10,13 @@ export const About: React.FC = () => {
   return (
     <section className="section section-bg">
       <div className="container">
-        <div className="flex gap-[143px]">
+        <div className="flex md:gap-[43px] xl:gap-[143px] items-center">
           <Image
             width={523}
             height={702}
             alt={image1.alt}
             src={image1.src}
-            className="pt-[136px]"
+            className="hidden md:block w-[320px] h-[550px] xl:w-[523px] xl:h-[702px]"
           />
 
           <div>
@@ -25,15 +25,14 @@ export const About: React.FC = () => {
               height={385}
               alt={image2.alt}
               src={image2.src}
-              className="mb-10 "
+              className="mb-10 md:w-[370px] md:h-[250px]"
             />
             <SectionTitle
               title={title}
               subtitle={subtitle}
-              start
-              className={"mb-8"}
+              className={"mb-8 items-start"}
             />
-            <p className="font-sans text-text-secondary text-[16px] leading-[1.75] tracking-[0.64px] font-normal mb-8">
+            <p className="font-sans text-text-secondary text-[13px] md:text-[16px] leading-[1.75] tracking-[0.64px] font-normal mb-8">
               {description}
             </p>
             <Button text={button} type="button" />
