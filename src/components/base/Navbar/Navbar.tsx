@@ -1,21 +1,19 @@
 import { NavLink } from "@/components/ui/NavLink/NavLink";
 
-export const Navbar = () => {
+import data from "@/data/header.json";
+
+export const Navbar: React.FC = () => {
+  const { navbarLinks } = data;
+
   return (
-    <nav>
-      <ul className="flex flex-row gap-[38px] items-center">
-        <li>
-          <NavLink title={"Home"} href={"/"} />
-        </li>
-        <li>
-          <NavLink title={"About"} href={"/about"} />
-        </li>
-        <li>
-          <NavLink title={"Poisons"} href={"/poisons"} />
-        </li>
-        <li>
-          <NavLink title={"Contact Us"} href={"/contact"} />
-        </li>
+    <nav className="hidden md:block">
+      <ul className="flex flex-col md:flex-row gap-[38px] items-center">
+        {navbarLinks &&
+          navbarLinks.map(({ title, href, id }) => (
+            <li key={id}>
+              <NavLink title={title} href={href} />
+            </li>
+          ))}
       </ul>
     </nav>
   );

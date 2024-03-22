@@ -1,0 +1,17 @@
+{
+  "logo": {
+    "href": "/",
+    "role": "navigation",
+    "aria-label": "Logo Gericht",
+    "src": "/icons/logo.svg",
+    "alt": "Gerícht"
+  },
+  "navbarLinks": [
+    { "title": "Home", "href": "/", "id": "1" },
+    { "title": "About", "href": "/about", "id": "2" },
+    { "title": "Poisons", "href": "/poisons", "id": "3" },
+    { "title": "Contact Us", "href": "/contact", "id": "4" }
+  ],
+  "linkToTable": { "title": "Book Table", "href": "/reservation" },
+  "buttonToggle": { "titleOpen": "Open", "titleClose": "Close" }
+}
