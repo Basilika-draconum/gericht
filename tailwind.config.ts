@@ -52,6 +52,7 @@ const config: Config = {
       fontFamily: {
         sans: ["var(--font-sans)"],
         upright: ["var(--font-upright)"],
+        cormorant: ["var(--font-cormorant)"],
       },
       // TRANSITION
       transitionDuration: {

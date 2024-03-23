@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Open_Sans } from "next/font/google";
 import { Cormorant } from "next/font/google";
+import { Cormorant_Upright } from "next/font/google";
 
 import "./globals.css";
 
@@ -13,6 +14,12 @@ const sans = Open_Sans({
   subsets: ["latin"],
   display: "swap",
   variable: "--font-sans",
+});
+const cormorant = Cormorant_Upright({
+  subsets: ["latin"],
+  weight: ["400", "600", "700"],
+  display: "swap",
+  variable: "--font-cormorant",
 });
 
 export const metadata: Metadata = {
@@ -42,7 +49,7 @@ export default function RootLayout({
   return (
     <html lang="uk">
       <body
-        className={`${upright.className} ${sans.className} bg-bg-main flex flex-col min-h-screen`}
+        className={`${upright.className} ${sans.className} ${cormorant.className} bg-bg-main flex flex-col min-h-screen`}
       >
         <main>{children}</main>
       </body>
