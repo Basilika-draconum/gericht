@@ -1,0 +1,78 @@
+{
+  "title": "Today’s Special",
+  "subtitle": "Menu that fits you palatte",
+  "image1x": {
+    "src": "/images/special-coctail@1x.jpg",
+    "alt": "Coctail set"
+  },
+  "coctails": {
+    "title": "Cocktails",
+    "coctails": [
+      {
+        "id": 1,
+        "title": "Aperol Spritz",
+        "price": "$20",
+        "desc": "Aperol | Villa Marchesi prosecco | soda | 30ml"
+      },
+      {
+        "id": 2,
+        "title": "Dark 'N' Stormy",
+        "price": "$16",
+        "desc": "Dark rum | Ginger beer | Slice of lime. "
+      },
+      {
+        "id": 3,
+        "title": "Daiquiri",
+        "price": "$10",
+        "desc": "Rum | Citrus juice | Sugar"
+      },
+      {
+        "id": 4,
+        "title": "Old Fashioned",
+        "price": "$31",
+        "desc": "Bourbon | Brown sugar | Angostura Bitters"
+      },
+      {
+        "id": 5,
+        "title": "Negroni",
+        "price": "$26",
+        "desc": "Gin | Sweet Vermouth | Campari | Orange garnish"
+      }
+    ]
+  },
+  "drinks": {
+    "title": "Wine & Beer",
+    "drinks": [
+      {
+        "id": 1,
+        "title": "Chapel Hill Shiraz",
+        "price": "$56",
+        "desc": "AU | Bottle"
+      },
+      {
+        "id": 2,
+        "title": "Catena Malbec",
+        "price": "$59",
+        "desc": "AR | Bottle"
+      },
+      {
+        "id": 3,
+        "title": "La Vieille Rosé",
+        "price": "$44",
+        "desc": "FR | 750 ml"
+      },
+      {
+        "id": 4,
+        "title": "Rhino Pale Ale",
+        "price": "$31",
+        "desc": "CA | 750 ml"
+      },
+      {
+        "id": 5,
+        "title": "Irish Guinness",
+        "price": "$26",
+        "desc": "IE | 750 ml"
+      }
+    ]
+  }
+}
