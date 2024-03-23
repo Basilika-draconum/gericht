@@ -8,7 +8,7 @@ import { MenuOverlay } from "@/components/base/MenuOverlay/MenuOverlay";
 import { ButtonNavToggle } from "@/components/ui/ButtonNavToggle/ButtonNavToggle";
 
 export const Header: React.FC = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(true);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {
     setIsMenuOpen((prev) => !prev);
@@ -22,7 +22,11 @@ export const Header: React.FC = () => {
       <div className="px-[60px] py-8 md:px-[120px] flex justify-between items-center gap-1">
         <Logo />
         <div className="block md:hidden">
-          <ButtonNavToggle open={isMenuOpen} onClick={toggleMenu} />
+          <ButtonNavToggle
+            open={isMenuOpen}
+            onClick={toggleMenu}
+            type={"button"}
+          />
         </div>
         <Navbar />
         <div className="hidden md:block">

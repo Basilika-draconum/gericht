@@ -7,7 +7,7 @@ export const Navbar: React.FC = () => {
 
   return (
     <nav className="hidden md:block">
-      <ul className="flex flex-col md:flex-row gap-[38px] items-center">
+      <ul className="flex flex-col md:flex-row gap-[28px] xl:gap-[38px] items-center">
         {navbarLinks &&
           navbarLinks.map(({ title, href, id }) => (
             <li key={id}>
