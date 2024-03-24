@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Toaster } from "react-hot-toast";
 import { Open_Sans } from "next/font/google";
 import { Cormorant } from "next/font/google";
 
@@ -44,7 +45,24 @@ export default function RootLayout({
       <body
         className={`${upright.className} ${sans.className} bg-bg-main flex flex-col min-h-screen`}
       >
-        <main>{children}</main>
+        <main>
+          {children}
+          <Toaster
+            position="top-center"
+            reverseOrder={false}
+            toastOptions={{
+              style: {
+                border: "solid",
+                borderColor: "#fff",
+                borderWidth: "1px",
+                borderRadius: "10px",
+                background: "#0C0C0C",
+                color: "#fff",
+              },
+              duration: 2500,
+            }}
+          />
+        </main>
       </body>
     </html>
   );
