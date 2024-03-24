@@ -1,0 +1,40 @@
+{
+  "contact": {
+    "title": "Contact Us",
+    "subtitle": "9 W 53rd St, New York, NY 10019, USA",
+    "numbers": [
+      { "tell": "12123441230", "number": "+1 212-344-1230", "id": 1 },
+      { "tell": "12125551230", "number": "+1 212-555-1230", "id": 2 }
+    ]
+  },
+  "working": {
+    "title": "Working Hours",
+    "times": [
+      { "day": "Monday-Friday:", "time": "08:00 am -12:00 am", "id": 1 },
+      { "day": "Saturday-Sunday:", "time": "07:00am -11:00 pm", "id": 2 }
+    ]
+  },
+  "icons": [
+    {
+      "alt": "facebook",
+      "href": "https://www.facebook.com/",
+      "src": "icons/facebook.svg",
+      "id": 1
+    },
+    {
+      "alt": "twitter",
+      "href": "https://www.twitter.com/",
+      "src": "icons/twitter.svg",
+      "id": 2
+    },
+    {
+      "alt": "instagram",
+      "href": "https://www.instagram.com/",
+      "src": "icons/instagram.svg",
+      "id": 3
+    }
+  ],
+  "slogan": "The best way to find yourself is to lose yourself in the service of others.",
+  "spoon": { "src": "icons/spoon.svg", "alt": "spoon" },
+  "description": "2021 Gerícht. All Rights reserved."
+}
