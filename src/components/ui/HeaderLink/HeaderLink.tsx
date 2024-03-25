@@ -1,10 +1,14 @@
 "use client";
+
 import { Link } from "react-scroll";
+
 import data from "@/data/header.json";
+
 import { IHeaderLinkProps } from "./types";
 
 export const HeaderLink: React.FC<IHeaderLinkProps> = ({ onClick }) => {
   const { linkToTable } = data;
+
   return (
     <Link
       className="flex gap-x-[10px] xl:gap-x-[50px] items-center justify-center group cursor-pointer transition-all"

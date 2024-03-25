@@ -1,4 +1,3 @@
-import React from "react";
 import { IButtonNavToggleProps } from "./types";
 
 import data from "@/data/header.json";

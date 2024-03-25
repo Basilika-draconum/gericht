@@ -13,7 +13,7 @@ export const Logo: React.FC = () => {
       target="_blank"
       rel="noopener noreferrer nofollow"
       role={logo.role}
-      aria-label={logo["aria-label"]}
+      aria-label={logo.ariaLabel}
       className="inline-block"
     >
       <Image

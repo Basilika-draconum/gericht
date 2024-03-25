@@ -2,7 +2,7 @@
   "logo": {
     "href": "/",
     "role": "navigation",
-    "aria-label": "Logo Gericht",
+    "ariaLabel": "Logo Gericht",
     "src": "/icons/logo.svg",
     "alt": "Gerícht"
   },

@@ -18,8 +18,8 @@ export const Header: React.FC = () => {
     setIsMenuOpen(false);
   };
   return (
-    <header className="bg-black w-full">
-      <div className="px-[60px] py-8 md:px-[120px] flex justify-between items-center gap-1">
+    <header className="absolute top-8 bottom-8 left-0 z-20 bg-transparent w-full">
+      <div className="px-[60px] md:px-[120px] flex justify-between items-center gap-1">
         <Logo />
         <div className="block md:hidden">
           <ButtonNavToggle
