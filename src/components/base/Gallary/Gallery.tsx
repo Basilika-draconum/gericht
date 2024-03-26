@@ -2,7 +2,7 @@ import { GalleryItemPoison } from "@/components/ui/GalleryItemPoison/GalleryItem
 
 import data from "@/data/poison.json";
 
-export const GalleryPoison: React.FC = () => {
+export const Gallery: React.FC = () => {
   const { images } = data;
 
   return (

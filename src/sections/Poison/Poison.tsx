@@ -1,5 +1,5 @@
-import { GalleryPoison } from "./../../components/base/GallaryPoison/GalleryPoison";
-import { SectionTitle } from "./../../components/ui/SectionTitle/SectionTitle";
+import { Gallery } from "@/components/base/Gallary/Gallery";
+import { SectionTitle } from "@/components/ui/SectionTitle/SectionTitle";
 
 import data from "@/data/poison.json";
 
@@ -15,7 +15,7 @@ export const Poison: React.FC = () => {
             subtitle={subtitle}
             className="items-center"
           />
-          <GalleryPoison />
+          <Gallery />
         </div>
       </div>
     </section>
