@@ -9,8 +9,8 @@ import { Poison } from "@/sections/Poison/Poison";
 export default async function Home() {
   return (
     <>
-      <Hero />
       <Header />
+      <Hero />
       <Reservation />
       <About />
       <Poison />
