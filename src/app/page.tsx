@@ -4,14 +4,16 @@ import { Contacts } from "@/sections/Contacts";
 import { Hero } from "@/sections/Hero/Hero";
 import { Reservation } from "@/sections/Reservation";
 import { Special } from "@/sections/Special";
+import { Poison } from "@/sections/Poison/Poison";
 
 export default async function Home() {
   return (
     <>
-      <Hero />
       <Header />
+      <Hero />
       <Reservation />
       <About />
+      <Poison />
       <Special />
       <Contacts />
     </>
