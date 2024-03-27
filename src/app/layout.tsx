@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
+import { Toaster } from "react-hot-toast";
 import { Open_Sans } from "next/font/google";
 import { Cormorant } from "next/font/google";
+import { Cormorant_Upright } from "next/font/google";
 
 import "./globals.css";
 
@@ -13,6 +15,12 @@ const sans = Open_Sans({
   subsets: ["latin"],
   display: "swap",
   variable: "--font-sans",
+});
+const cormorant = Cormorant_Upright({
+  subsets: ["latin"],
+  weight: ["400", "600", "700"],
+  display: "swap",
+  variable: "--font-cormorant",
 });
 
 export const metadata: Metadata = {
@@ -42,9 +50,26 @@ export default function RootLayout({
   return (
     <html lang="uk">
       <body
-        className={`${upright.className} ${sans.className} bg-bg-main flex flex-col min-h-screen`}
+        className={`${upright.className} ${sans.className} ${cormorant.className} bg-bg-main flex flex-col min-h-screen`}
       >
-        <main>{children}</main>
+        <main>
+          {children}
+          <Toaster
+            position="top-center"
+            reverseOrder={false}
+            toastOptions={{
+              style: {
+                border: "solid",
+                borderColor: "#fff",
+                borderWidth: "1px",
+                borderRadius: "10px",
+                background: "#0C0C0C",
+                color: "#fff",
+              },
+              duration: 2500,
+            }}
+          />
+        </main>
       </body>
     </html>
   );
