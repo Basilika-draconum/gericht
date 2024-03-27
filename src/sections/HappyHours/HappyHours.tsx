@@ -1,32 +1,17 @@
-import Image from "next/image";
-
 import data from "@/data/happyHours.json";
 
 export const HappyHours: React.FC = () => {
-  const { image, title, day, time } = data;
+  const { title, day, time } = data;
 
   return (
-    <section className="relative">
-      <div className="w-full h-full overflow-hidden">
-        <Image
-          src={image.src}
-          alt={image.alt}
-          width={1440}
-          height={900}
-          quality={100}
-          sizes="100vw"
-          style={{
-            objectFit: "cover",
-          }}
-        />
-      </div>
-      <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-        <h2 className="w-full text-text-accent not-italic capitalize tracking-[3.84px] font-semibold text-9xl leading-[166.4px] font-upright text-center mb-8">
+    <section className="section section-bg-happy">
+      <div className="flex flex-col items-center gap-4 md:gap-8">
+        <h2 className="w-full text-text-accent not-italic capitalize tracking-[3.84px] font-semibold text-6xl md:text-9xl leading-[100.4px] md:leading-[166.4px] font-upright text-center">
           {title}
         </h2>
-        <h3 className="w-full text-text-white not-italic capitalize tracking-[1.28px] font-bold leading-[41.6px] text-[32px] font-upright text-center">
-          {day}
-          {time}
+        <h3 className="w-full flex gap-1 justify-center text-text-white not-italic capitalize tracking-[1.28px] font-bold leading-[41.6px] text-[24px] md:text-[32px] font-upright text-center">
+          <span className="inline-block">{day}</span>
+          <span className="inline-block">{time}</span>
         </h3>
       </div>
     </section>
