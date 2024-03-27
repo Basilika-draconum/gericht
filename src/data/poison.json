@@ -1,0 +1,9 @@
+{
+  "title": "What’s Your Poison?",
+  "subtitle": "Wide Range to choose from",
+  "images": [
+    { "src": "/images/poison-beer.jpg", "title": "Beer", "id": 1 },
+    { "src": "/images/poison-wine.jpg", "title": "Wine", "id": 2 },
+    { "src": "/images/poison-coctail.jpg", "title": "Coctail", "id": 3 }
+  ]
+}
