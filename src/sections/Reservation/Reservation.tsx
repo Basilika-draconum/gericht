@@ -4,7 +4,7 @@ import { SectionTitle } from "@/components/ui/SectionTitle";
 import data from "@/data/reservation.json";
 
 export const Reservation = () => {
-  const { title, subTitle, button } = data;
+  const { title, subTitle } = data;
 
   return (
     <section className="section bg-bg-main">
@@ -15,7 +15,7 @@ export const Reservation = () => {
             subtitle={subTitle}
             className="items-center"
           />
-          <FormReservation button={button} />
+          <FormReservation />
         </div>
       </div>
     </section>

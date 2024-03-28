@@ -1,5 +1,12 @@
 {
   "title": "Book A Table",
   "subTitle": "Reservations",
-  "button": "Book Now"
+  "button": "Book Now",
+  "guests": [
+    { "value": 1, "label": "1 Person" },
+    { "value": 2, "label": "2 Person" },
+    { "value": 3, "label": "3 Person" },
+    { "value": 5, "label": "5 Person" },
+    { "value": 10, "label": "Company" }
+  ]
 }

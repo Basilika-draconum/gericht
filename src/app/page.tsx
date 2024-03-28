@@ -1,13 +1,13 @@
 import { About } from "@/sections/About";
-import { Header } from "@/sections/Header/Header";
+import { Header } from "@/sections/Header";
 import { Contacts } from "@/sections/Contacts";
-import { Hero } from "@/sections/Hero/Hero";
+import { Hero } from "@/sections/Hero";
 import { Reservation } from "@/sections/Reservation";
 import { Special } from "@/sections/Special";
-import { HappyHours } from "@/sections/HappyHours/HappyHours";
-import { Newsletter } from "@/sections/Newsletter/Newsletter";
-import { Footer } from "@/sections/Footer/Footer";
-import { Poison } from "@/sections/Poison/Poison";
+import { HappyHours } from "@/sections/HappyHours";
+import { Newsletter } from "@/sections/Newsletter";
+import { Footer } from "@/sections/Footer";
+import { Poison } from "@/sections/Poison";
 
 export default async function Home() {
   return (
