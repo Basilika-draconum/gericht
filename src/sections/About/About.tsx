@@ -2,6 +2,7 @@ import Image from "next/image";
 
 import { Button } from "@/components/ui/Button";
 import { SectionTitle } from "@/components/ui/SectionTitle";
+import { Circle } from "@/components/ui/Circle/Circle";
 
 import data from "@/data/about.json";
 
@@ -9,7 +10,11 @@ export const About: React.FC = () => {
   const { title, subtitle, description, button, image1, image2 } = data;
   return (
     <section className="section section-bg">
-      <div className="container">
+      <div className="container relative">
+        <div className="w-[86px] h-[86px] md:w-[106px] xl:w-[146px] xl:h-[146px] md:h-[106px] z-20 absolute -top-[100px] left-2 md:-top-[75px] md:left-[15px] xl:-top-[215px] xl:left-5 rounded-full overflow-hidden">
+          <Circle />
+        </div>
+
         <div className="flex md:gap-[43px] xl:gap-[143px] items-center">
           <Image
             width={523}
