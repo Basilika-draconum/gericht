@@ -74,5 +74,7 @@
         "desc": "IE | 750 ml"
       }
     ]
-  }
+  },
+  "classRight": "-top-3 right-2 md:-top-6 md:right-3 xl:-top-8 xl:right-9",
+  "classLeft": "-bottom-[110px] left-2 md:-bottom-[154px] md:left-2 xl:-bottom-[225px] xl:left-7"
 }

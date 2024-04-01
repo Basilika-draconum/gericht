@@ -4,5 +4,6 @@
   "description": "Adipiscing tempus ullamcorper lobortis odio tellus arcu volutpat. Risus placerat morbi volutpat habitasse interdum mi aliquam In sed odio nec aliquet.",
   "button": "Know More",
   "image1": { "alt": "beer", "src": "/images/about-beer@1x.jpg" },
-  "image2": { "alt": "coctail", "src": "/images/about-coctail@1x.jpg" }
+  "image2": { "alt": "coctail", "src": "/images/about-coctail@1x.jpg" },
+  "classLeft": "-top-[100px] left-2 md:-top-[75px] md:left-[15px] xl:-top-[215px] xl:left-5"
 }
