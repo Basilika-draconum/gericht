@@ -5,11 +5,11 @@ import data from "@/data/hero.json";
 export const Hero = () => {
   const { title, image1 } = data;
   return (
-    <section className="section section-bg">
+    <section className="section-hero section-bg">
       <div className="container">
         <div className="w-full flex justify-center items-center relative">
           <h1
-            className="font-cormorant inline-block white-space-no-wrap w-full text-center absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-30
+            className="font-cormorant inline-block white-space-no-wrap w-full text-center absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-[5]
               text-text-white text-5xl leading-[155.3px] tracking-[5.05px] md:text-8xl md:leading-[195.3px] md:tracking-[7.05px] xl:text-[181px] xl:leading-[235.3px] xl:tracking-[9.05px] font-bold capitalize not-italic"
           >
             {title}

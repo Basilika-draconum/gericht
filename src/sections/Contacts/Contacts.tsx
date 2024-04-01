@@ -6,7 +6,7 @@ import Image from "next/image";
 export const Contacts: React.FC = () => {
   const { title, subtitle, description, button, schedule, image1x } = data;
   return (
-    <section className="section section-bg">
+    <section id="/contact" className="section section-bg">
       <div className="container flex gap-[80px] items-center">
         <div>
           <SectionTitle

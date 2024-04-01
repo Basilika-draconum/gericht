@@ -12,14 +12,10 @@ export const WorkTime = () => {
         {working.times.map(({ day, time, id }) => (
           <li
             key={id}
-            className="flex flex-col items-center gap-[2px] text-[13px] md:text-base text-text-secondary font-normal not-italic leading-7 tracking-[0.64px] cursor-pointer transition-all group"
+            className="flex flex-col items-center gap-[2px] text-[13px] md:text-base text-text-secondary font-normal not-italic leading-7 tracking-[0.64px]"
           >
-            <p className="text-center group-hover:text-text-accent group-focus:text-text-accent">
-              {day}
-            </p>
-            <p className="text-center group-hover:text-text-accent group-focus:text-text-accent">
-              {time}
-            </p>
+            <p className="text-center">{day}</p>
+            <p className="text-center">{time}</p>
           </li>
         ))}
       </ul>
