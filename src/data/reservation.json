@@ -1,6 +1,5 @@
 {
   "title": "Book A Table",
   "subTitle": "Reservations",
-  "button": "Book Now",
-  "classRight": "-top-3 right-2 md:-top-6 md:right-3 xl:-top-8 xl:right-9"
+  "button": "Book Now"
 }

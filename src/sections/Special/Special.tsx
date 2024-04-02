@@ -1,18 +1,18 @@
+import Image from "next/image";
+
 import { DrinkList } from "@/components/base/DrinkList";
 import { SectionTitle } from "@/components/ui/SectionTitle";
 import { Circle } from "@/components/ui/Circle/Circle";
 
 import data from "@/data/special.json";
-import Image from "next/image";
+import { CircleClass } from "@/components/ui/Circle/type";
 
 export const Special: React.FC = () => {
-  const { title, subtitle, coctails, image1x, drinks, classRight, classLeft } =
-    data;
+  const { title, subtitle, coctails, image1x, drinks } = data;
   return (
     <section className="section">
       <div className="container relative">
-        <Circle currentClass={classRight} />
-        <Circle currentClass={classLeft} />
+        <Circle currentClass={CircleClass.ClassRight} />
 
         <SectionTitle
           title={title}

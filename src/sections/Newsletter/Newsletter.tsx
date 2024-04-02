@@ -3,14 +3,15 @@ import { FormNewsletter } from "@/components/base/FormNewsletter/FormNewsletter"
 import { Circle } from "@/components/ui/Circle/Circle";
 
 import data from "@/data/newsletter.json";
+import { CircleClass } from "@/components/ui/Circle/type";
 
 export const Newsletter: React.FC = () => {
-  const { title, subtitle, slogan, classRight } = data;
+  const { title, subtitle, slogan } = data;
 
   return (
     <section className="pt-[50px] md:pt-[100px] bg-bg-main">
       <div className="container relative">
-        <Circle currentClass={classRight} />
+        <Circle currentClass={CircleClass.ClassRight} />
 
         <div className="bg-text-extra relative z-[4] border-bg-accent/20 border py-[34px] px-5 md:px-8 md:py-[64px] flex flex-col justify-center items-center">
           <SectionTitle
