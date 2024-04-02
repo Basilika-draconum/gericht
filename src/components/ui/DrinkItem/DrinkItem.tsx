@@ -8,7 +8,7 @@ export const DrinkItem: React.FC<DrinkItemType> = ({ title, price, desc }) => {
         <p className="text-text-white drink-price">{price}</p>
       </div>
 
-      <p className="font-sans text-[13px] md:text-[16px] font-regular leading-[1.75] traking-[0.64px] text-text-secondary">
+      <p className="font-sans text-[13px] md:text-[16px] font-normal leading-[1.75] traking-[0.64px] text-text-secondary">
         {desc}
       </p>
     </li>
