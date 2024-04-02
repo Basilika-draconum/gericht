@@ -5,14 +5,14 @@ import { SectionTitle } from "@/components/ui/SectionTitle";
 import { Circle } from "@/components/ui/Circle/Circle";
 
 import data from "@/data/about.json";
+import { CircleClass } from "@/components/ui/Circle/type";
 
 export const About: React.FC = () => {
-  const { title, subtitle, description, button, image1, image2, classLeft } =
-    data;
+  const { title, subtitle, description, button, image1, image2 } = data;
   return (
     <section id="/about" className="section section-bg">
       <div className="container relative">
-        <Circle currentClass={classLeft} />
+        <Circle currentClass={CircleClass.ClassLeft} />
 
         <div className="flex md:gap-[43px] xl:gap-[143px] items-center">
           <Image

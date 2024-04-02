@@ -1,4 +1,4 @@
-import { Gallery } from "@/components/base/Gallary/Gallery";
+import { Gallery } from "@/components/base/Gallery";
 import { SectionTitle } from "@/components/ui/SectionTitle/SectionTitle";
 
 import data from "@/data/poison.json";
