@@ -17,7 +17,7 @@ const config: Config = {
       xl: "1440px",
 
       smOnly: { max: "767.98px" },
-      mdOnly: { min: "768px", max: "1279.98px" },
+      mdOnly: { min: "768px", max: "1439.98px" },
       notXl: { max: "1439.98px" },
     },
     // THEME
