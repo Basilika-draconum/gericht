@@ -2,10 +2,9 @@
 import { Controller, SubmitHandler, useForm } from "react-hook-form";
 import { MenuItem, Select, ThemeProvider } from "@mui/material";
 import toast from "react-hot-toast";
-// import { DateCalendar } from "@mui/x-date-pickers/DateCalendar";
-// import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
-// import { LocalizationProvider } from "@mui/x-date-pickers";
-// import dayjs, { Dayjs } from "dayjs";
+import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
+import { DatePicker, LocalizationProvider } from "@mui/x-date-pickers";
+import dayjs, { Dayjs } from "dayjs";
 
 import { muiTheme } from "@/app/mui-theme";
 import { Button } from "@/components/ui/Button";
@@ -15,11 +14,12 @@ import data from "@/data/reservation.json";
 const defaultValues = {
   select1: "",
   select2: "",
-  // date: Dayjs,
+  date: dayjs(new Date()),
 };
 interface FormData {
   select1: string;
   select2: string;
+  date: Dayjs;
 }
 
 export const FormReservation: React.FC = () => {
@@ -33,7 +33,8 @@ export const FormReservation: React.FC = () => {
 
   const onSubmit: SubmitHandler<FormData> = async (formData) => {
     toast(
-      `You booked a table for ${formData.select1} people and at ${formData.select2}:00`,
+      `You booked a table for ${formData.select1} people and at ${formData.select2}:00
+      We're looking forward for you ${formData.date} `,
     );
     reset();
   };
@@ -56,7 +57,7 @@ export const FormReservation: React.FC = () => {
                 <Select
                   {...field}
                   size="medium"
-                  sx={{ minWidth: 320, color: "#F5EFDB" }}
+                  sx={{ minWidth: 300, color: "#F5EFDB" }}
                   MenuProps={{
                     PaperProps: {
                       sx: {
@@ -141,19 +142,23 @@ export const FormReservation: React.FC = () => {
               )}
             </div>
           </div>
-          {/* <Controller
-          name="date"
-          control={control}
-          defaultValue={dayjs()} // Початкове значення дати
-          render={({ field }) => (
-            <LocalizationProvider dateAdapter={AdapterDayjs}>
-              <DateCalendar
-                value={field.value}
-                onChange={(newValue) => field.onChange(newValue)}
-              />
-            </LocalizationProvider>
-          )}
-        /> */}
+          <Controller
+            name="date"
+            control={control}
+            defaultValue={dayjs(new Date())} // Початкове значення дати
+            render={({ field }) => (
+              <LocalizationProvider dateAdapter={AdapterDayjs}>
+                <DatePicker
+                  sx={{
+                    minWidth: 300,
+                  }}
+                  value={field.value}
+                  onChange={(newValue) => field.onChange(newValue)}
+                  disablePast
+                />
+              </LocalizationProvider>
+            )}
+          />
           <Button type="submit" text={button} />
         </form>
       </ThemeProvider>
