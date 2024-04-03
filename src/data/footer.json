@@ -14,26 +14,6 @@
       { "day": "Saturday-Sunday:", "time": "07:00am -11:00 pm", "id": 2 }
     ]
   },
-  "icons": [
-    {
-      "alt": "facebook",
-      "href": "https://www.facebook.com/",
-      "src": "icons/facebook.svg",
-      "id": 1
-    },
-    {
-      "alt": "twitter",
-      "href": "https://www.twitter.com/",
-      "src": "icons/twitter.svg",
-      "id": 2
-    },
-    {
-      "alt": "instagram",
-      "href": "https://www.instagram.com/",
-      "src": "icons/instagram.svg",
-      "id": 3
-    }
-  ],
   "slogan": "The best way to find yourself is to lose yourself in the service of others.",
   "spoon": { "src": "icons/spoon.svg", "alt": "spoon" },
   "description": "2021 Gerícht. All Rights reserved."

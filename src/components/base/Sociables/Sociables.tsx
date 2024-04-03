@@ -1,32 +1,48 @@
 "use client";
-import Image from "next/image";
 import Link from "next/link";
 
-import data from "@/data/footer.json";
+import Instagram from "~/icons/instagram.svg";
+import Facebook from "~/icons/facebook.svg";
+import Twitter from "~/icons/twitter.svg";
 
-export const Sociables: React.FC = () => {
-  const { icons } = data;
+import { SociablesProps } from "./types";
 
+export const Sociables: React.FC<SociablesProps> = ({ onClick }) => {
   return (
-    <ul className="flex gap-4 ">
-      {icons.map(({ alt, href, src, id }) => (
-        <li key={id}>
-          <Link
-            href={href}
-            target="_blank"
-            rel="noopener noreferrer nofollow"
-            aria-label={alt}
-          >
-            <Image
-              src={src}
-              alt={alt}
-              width={24}
-              height={24}
-              className="text-text-addaccent cursor-pointer transition-all hover:text-text-accent focus:text-text-accent"
-            />
-          </Link>
-        </li>
-      ))}
+    <ul className="flex gap-4 text-text-addaccent transition-all cursor-pointer">
+      <li>
+        <Link
+          href="https://www.facebook.com/"
+          target="_blank"
+          rel="noopener noreferrer nofollow"
+          aria-label="facebook"
+          onClick={onClick}
+        >
+          <Facebook className="hover:text-text-accent" />
+        </Link>
+      </li>
+      <li>
+        <Link
+          href="https://www.twitter.com/"
+          target="_blank"
+          rel="noopener noreferrer nofollow"
+          aria-label="twitter"
+          onClick={onClick}
+        >
+          <Twitter className="hover:text-text-accent" />
+        </Link>
+      </li>
+      <li>
+        <Link
+          href="https://www.instagram.com/"
+          target="_blank"
+          rel="noopener noreferrer nofollow"
+          aria-label="instagram"
+          onClick={onClick}
+        >
+          <Instagram className="hover:text-text-accent" />
+        </Link>
+      </li>
     </ul>
   );
 };

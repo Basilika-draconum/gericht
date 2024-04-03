@@ -1,13 +1,21 @@
-import { Button } from "@/components/ui/Button";
-import { SectionTitle } from "@/components/ui/SectionTitle";
-import data from "@/data/contacts.json";
 import Image from "next/image";
+
+import { Button } from "@/components/ui/Button";
+import { Circle } from "@/components/ui/Circle";
+import { SectionTitle } from "@/components/ui/SectionTitle";
+
+import data from "@/data/contacts.json";
+import { CircleClass } from "@/components/ui/Circle/type";
 
 export const Contacts: React.FC = () => {
   const { title, subtitle, description, button, schedule, image1x } = data;
   return (
-    <section className="section section-bg">
-      <div className="container flex gap-[80px] items-center">
+    <section id="/contact" className="section section-bg">
+      <div className="container flex gap-[80px] items-center relative">
+        <Circle
+          currentClass={CircleClass.ClassLeft}
+          className="hidden md:block mdOnly:-top-[146px]"
+        />
         <div>
           <SectionTitle
             title={title}
