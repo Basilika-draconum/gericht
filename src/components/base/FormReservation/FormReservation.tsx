@@ -142,15 +142,28 @@ export const FormReservation: React.FC = () => {
               )}
             </div>
           </div>
+
           <Controller
             name="date"
             control={control}
-            defaultValue={dayjs(new Date())} // Початкове значення дати
+            defaultValue={dayjs(new Date())}
             render={({ field }) => (
               <LocalizationProvider dateAdapter={AdapterDayjs}>
                 <DatePicker
                   sx={{
-                    minWidth: 300,
+                    minWidth: 320,
+                    "& .MuiOutlinedInput-root .MuiOutlinedInput-notchedOutline":
+                      { border: "1px solid #f5efdb" },
+                    "& .MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline":
+                      { border: "1px solid #f5efdb" },
+                    "& .MuiOutlinedInput-root": {
+                      color: "#f5efdb",
+                    },
+                  }}
+                  slotProps={{
+                    openPickerButton: {
+                      color: "secondary",
+                    },
                   }}
                   value={field.value}
                   onChange={(newValue) => field.onChange(newValue)}
@@ -159,6 +172,7 @@ export const FormReservation: React.FC = () => {
               </LocalizationProvider>
             )}
           />
+
           <Button type="submit" text={button} />
         </form>
       </ThemeProvider>

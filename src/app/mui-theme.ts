@@ -28,30 +28,11 @@ export const muiTheme = createTheme({
           color: "#DCCA87", // Колір стрілки
         },
         select: {
-          "&:focus": {
-            // backgroundColor: "#F5EFDB", // Колір фону при фокусі
-          },
           "&::placeholder": {
-            color: "#DCCA87", // Колір плейсхолдера
+            color: "#DCCA87",
           },
         },
       },
     },
   },
-  //   components: {
-  // MuiButton: {
-  //   styleOverrides: {
-  //     root: {
-  //       borderRadius: "0.5rem",
-  //       fontFamily: "Hind Madurai, sans-serif",
-  //     },
-  //     sizeLarge: {
-  //       padding: "18px 22px",
-  //     },
-  //   },
-  // },
-  //   },
-  //   typography: {
-  //     fontFamily: "Hind Madurai, sans-serif",
-  //   },
 });
