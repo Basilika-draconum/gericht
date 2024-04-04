@@ -7,8 +7,7 @@ export const NavLink = ({ title, href, onClick }: INavLinkProps) => {
   return (
     <div className="relative group cursor-pointer">
       <Link
-        className="text-text-white text-[16px] xl:text-base font-normal leading-7 tracking-[0.64px]
-           group-hover:text-text-accent group-focus:text-text-accent transition-all"
+        className="text-text-white text-[16px] xl:text-base font-normal leading-7 tracking-[0.64px] group-hover:text-text-accent group-focus:text-text-accent transition-all"
         to={href}
         spy={true}
         smooth={true}

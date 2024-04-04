@@ -8,7 +8,7 @@ import data from "@/data/contacts.json";
 import { CircleClass } from "@/components/ui/Circle/type";
 
 export const Contacts: React.FC = () => {
-  const { title, subtitle, description, button, schedule, image1x } = data;
+  const { title, subtitle, description, button, schedule, image1x, to } = data;
 
   return (
     <section id="/contact" className="section section-bg">
@@ -38,7 +38,7 @@ export const Contacts: React.FC = () => {
               <p>{schedule.weekend}</p>
             </div>
           </div>
-          <Button type="button" text={button} />
+          <Button type="button" text={button} to={to} />
         </div>
 
         <Image

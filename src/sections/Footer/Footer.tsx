@@ -11,7 +11,10 @@ export const Footer: React.FC = () => {
   const { slogan, description } = data;
 
   return (
-    <footer className="-mt-[142px] md:-mt-[252px] pt-[200px] pb-[28px] md:pt-[308px] xl:pt-[348px] md:pb-[38px] section-bg">
+    <footer
+      id="/footer"
+      className="-mt-[142px] md:-mt-[252px] pt-[200px] pb-[28px] md:pt-[308px] xl:pt-[348px] md:pb-[38px] section-bg"
+    >
       <div className="container">
         <div className="flex flex-col gap-[34px] xl:gap-[64px]">
           <div className="xl:hidden flex flex-col items-center xl:w-[358px]">
