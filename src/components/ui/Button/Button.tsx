@@ -13,7 +13,7 @@ export const Button: React.FC<ButtonProps> = ({
     <Link to={to} smooth={true} duration={2000} spy={true} offset={50}>
       <button
         type={type}
-        className={`w-fit bg-bg-accent py-2 px-8 text-text-extra font-upright font-bold text-[16px] leading-[1.75] tracking-[0.64px] transition-all hover:bg-bg-hoveraccent focus:bg-bg-hoveraccent cursor-pointer ${className}`}
+        className={`w-fit text-nowrap bg-bg-accent py-2 px-8 text-text-extra font-upright font-bold text-[16px] leading-[1.75] tracking-[0.64px] transition-all hover:bg-bg-hoveraccent focus:bg-bg-hoveraccent cursor-pointer ${className}`}
       >
         {text}
       </button>
@@ -21,7 +21,7 @@ export const Button: React.FC<ButtonProps> = ({
   ) : (
     <button
       type={type}
-      className={`w-fit bg-bg-accent py-2 px-8 text-text-extra font-upright font-bold text-[16px] leading-[1.75] tracking-[0.64px] transition-all hover:bg-bg-hoveraccent focus:bg-bg-hoveraccent cursor-pointer ${className}`}
+      className={`w-fit text-nowrap bg-bg-accent py-2 px-8 text-text-extra font-upright font-bold text-[16px] leading-[1.75] tracking-[0.64px] transition-all hover:bg-bg-hoveraccent focus:bg-bg-hoveraccent cursor-pointer ${className}`}
     >
       {text}
     </button>

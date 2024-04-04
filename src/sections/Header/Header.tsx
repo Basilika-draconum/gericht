@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 import { Navbar } from "@/components/base/Navbar";
 import { Logo } from "@/components/ui/Logo";
@@ -10,6 +10,18 @@ import { ButtonNavToggle } from "@/components/ui/ButtonNavToggle";
 export const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+  useEffect(() => {
+    if (isMenuOpen) {
+      document.body.classList.add("lock");
+    } else {
+      document.body.classList.remove("lock");
+    }
+
+    return () => {
+      document.body.classList.remove("lock");
+    };
+  }, [isMenuOpen]);
+
   const toggleMenu = () => {
     setIsMenuOpen((prev) => !prev);
   };
@@ -18,7 +30,7 @@ export const Header: React.FC = () => {
     setIsMenuOpen(false);
   };
   return (
-    <header className="absolute top-8 bottom-8 left-0 z-20 bg-transparent w-full">
+    <header className="absolute top-8 left-0 z-20 bg-transparent w-full">
       <div className="px-[60px] md:px-[120px] flex justify-between items-center gap-1">
         <Logo />
 
