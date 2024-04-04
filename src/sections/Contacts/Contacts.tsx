@@ -9,6 +9,7 @@ import { CircleClass } from "@/components/ui/Circle/type";
 
 export const Contacts: React.FC = () => {
   const { title, subtitle, description, button, schedule, image1x } = data;
+
   return (
     <section id="/contact" className="section section-bg">
       <div className="container flex gap-[80px] items-center relative">
@@ -16,6 +17,7 @@ export const Contacts: React.FC = () => {
           currentClass={CircleClass.ClassLeft}
           className="hidden md:block mdOnly:-top-[146px]"
         />
+
         <div>
           <SectionTitle
             title={title}

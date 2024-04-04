@@ -61,7 +61,7 @@ export default function RootLayout({
                 background: "#0C0C0C",
                 color: "#fff",
               },
-              duration: 2500,
+              duration: 3000,
             }}
           />
         </main>

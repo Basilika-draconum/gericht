@@ -1,6 +1,6 @@
 import { FormReservation } from "@/components/base/FormReservation";
 import { SectionTitle } from "@/components/ui/SectionTitle";
-import { Circle } from "@/components/ui/Circle/Circle";
+import { Circle } from "@/components/ui/Circle";
 
 import data from "@/data/reservation.json";
 import { CircleClass } from "@/components/ui/Circle/type";

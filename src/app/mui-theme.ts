@@ -25,7 +25,7 @@ export const muiTheme = createTheme({
       styleOverrides: {
         // Налаштування стилів для спливаючого вікна
         icon: {
-          color: "#DCCA87", // Колір стрілки
+          color: "#DCCA87",
         },
         select: {
           "&::placeholder": {

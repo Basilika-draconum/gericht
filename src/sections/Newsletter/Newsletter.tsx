@@ -1,6 +1,6 @@
 import { SectionTitle } from "@/components/ui/SectionTitle";
-import { FormNewsletter } from "@/components/base/FormNewsletter/FormNewsletter";
-import { Circle } from "@/components/ui/Circle/Circle";
+import { FormNewsletter } from "@/components/base/FormNewsletter";
+import { Circle } from "@/components/ui/Circle";
 
 import data from "@/data/newsletter.json";
 import { CircleClass } from "@/components/ui/Circle/type";

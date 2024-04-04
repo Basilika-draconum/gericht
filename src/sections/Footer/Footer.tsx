@@ -1,11 +1,11 @@
-import { ContactsInfo } from "@/components/base/ContactsInfo/ContactsInfo";
-import { WorkTime } from "@/components/base/WorkTime/WorkTime";
-import { Sociables } from "@/components/base/Sociables/Sociables";
+import { ContactsInfo } from "@/components/base/ContactsInfo";
+import { WorkTime } from "@/components/base/WorkTime";
+import { Sociables } from "@/components/base/Sociables";
 
 import Spoon from "~/icons/spoon.svg";
 
 import data from "@/data/footer.json";
-import { Logo } from "@/components/ui/Logo/Logo";
+import { Logo } from "@/components/ui/Logo";
 
 export const Footer: React.FC = () => {
   const { slogan, description } = data;

@@ -2,7 +2,7 @@ import Image from "next/image";
 
 import { Button } from "@/components/ui/Button";
 import { SectionTitle } from "@/components/ui/SectionTitle";
-import { Circle } from "@/components/ui/Circle/Circle";
+import { Circle } from "@/components/ui/Circle";
 
 import data from "@/data/about.json";
 import { CircleClass } from "@/components/ui/Circle/type";

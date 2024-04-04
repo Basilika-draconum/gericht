@@ -1,5 +1,6 @@
 "use client";
 import { Link } from "react-scroll";
+
 import { INavLinkProps } from "./types";
 
 export const NavLink = ({ title, href, onClick }: INavLinkProps) => {
@@ -17,7 +18,7 @@ export const NavLink = ({ title, href, onClick }: INavLinkProps) => {
       >
         {title}
       </Link>
-      <div className="absolute left-0 top-6 w-full h-0.5 origin-left  bg-text-accent transition-all  transform scale-x-0  group-hover:scale-x-100 group-focus:scale-x-100"></div>
+      <div className="absolute left-0 top-6 w-full h-0.5 origin-left bg-text-accent transition-all transform scale-x-0 group-hover:scale-x-100 group-focus:scale-x-100"></div>
     </div>
   );
 };

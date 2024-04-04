@@ -8,6 +8,7 @@ export const WorkTime = () => {
       <h3 className="text-center mb-4 md:mb-6 text-2xl md:text-[32px] text-text-addaccent font-normal not-italic leading-[41.6px] tracking-[1.28px] capitalize">
         {working.title}
       </h3>
+
       <ul className="font-sans flex flex-col gap-2">
         {working.times.map(({ day, time, id }) => (
           <li

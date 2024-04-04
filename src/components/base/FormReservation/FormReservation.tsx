@@ -4,23 +4,19 @@ import { MenuItem, Select, ThemeProvider } from "@mui/material";
 import toast from "react-hot-toast";
 import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
 import { DatePicker, LocalizationProvider } from "@mui/x-date-pickers";
-import dayjs, { Dayjs } from "dayjs";
+import dayjs from "dayjs";
 
 import { muiTheme } from "@/app/mui-theme";
 import { Button } from "@/components/ui/Button";
 
 import data from "@/data/reservation.json";
+import { FormData } from "./types";
 
 const defaultValues = {
   select1: "",
   select2: "",
   date: dayjs(new Date()),
 };
-interface FormData {
-  select1: string;
-  select2: string;
-  date: Dayjs;
-}
 
 export const FormReservation: React.FC = () => {
   const { button, guests, times } = data;
@@ -34,7 +30,7 @@ export const FormReservation: React.FC = () => {
   const onSubmit: SubmitHandler<FormData> = async (formData) => {
     toast(
       `You booked a table for ${formData.select1} people and at ${formData.select2}:00
-      We're looking forward for you ${formData.date} `,
+      We're looking forward for you ${formData.date}.`,
     );
     reset();
   };

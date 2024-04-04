@@ -38,7 +38,6 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
-
 .drink-price {
   position: relative;
 }
@@ -70,10 +69,3 @@
 .animate-spin-slow {
   animation: spin-slow 6s linear infinite;
 }
-/* .css-1n8wj59-MuiInputBase-root-MuiOutlinedInput-root {
-  color: #f5efdb;
-} */
-
-/* .css-1d3z3hw-MuiOutlinedInput-notchedOutline:hover {
-  border-color: red;
-} */
