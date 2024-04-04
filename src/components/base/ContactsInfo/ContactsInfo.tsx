@@ -8,6 +8,7 @@ export const ContactsInfo: React.FC = () => {
       <h3 className="mb-4 md:mb-6 text-2xl md:text-[32px] font-normal not-italic leading-[41.6px] tracking-[1.28px] capitalize">
         {contact.title}
       </h3>
+
       <a
         href="https://maps.app.goo.gl/jqK7cHuGY8EZmoXr7"
         target="_blank"
@@ -15,6 +16,7 @@ export const ContactsInfo: React.FC = () => {
       >
         {contact.subtitle}
       </a>
+
       <ul className="font-sans flex flex-col gap-[2px]">
         {contact.numbers.map(({ tell, number, id }) => (
           <li key={id}>

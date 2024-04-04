@@ -1,17 +1,20 @@
-import { ContactsInfo } from "@/components/base/ContactsInfo/ContactsInfo";
-import { WorkTime } from "@/components/base/WorkTime/WorkTime";
-import { Sociables } from "@/components/base/Sociables/Sociables";
+import { ContactsInfo } from "@/components/base/ContactsInfo";
+import { WorkTime } from "@/components/base/WorkTime";
+import { Sociables } from "@/components/base/Sociables";
 
 import Spoon from "~/icons/spoon.svg";
 
 import data from "@/data/footer.json";
-import { Logo } from "@/components/ui/Logo/Logo";
+import { Logo } from "@/components/ui/Logo";
 
 export const Footer: React.FC = () => {
   const { slogan, description } = data;
 
   return (
-    <footer className="-mt-[142px] md:-mt-[252px] pt-[200px] pb-[28px] md:pt-[308px] xl:pt-[348px] md:pb-[38px] section-bg">
+    <footer
+      id="/footer"
+      className="-mt-[142px] md:-mt-[252px] pt-[200px] pb-[28px] md:pt-[308px] xl:pt-[348px] md:pb-[38px] section-bg"
+    >
       <div className="container">
         <div className="flex flex-col gap-[34px] xl:gap-[64px]">
           <div className="xl:hidden flex flex-col items-center xl:w-[358px]">

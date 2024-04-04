@@ -19,6 +19,7 @@ export const MenuOverlay: React.FC<IMenuOverlayProps> = ({ onClick, open }) => {
         <Logo />
         <ButtonNavToggle open={open} onClick={onClick} type={"button"} />
       </div>
+
       <ul className="flex flex-col gap-4 items-center">
         {navbarLinks.map(({ title, href, id }) => (
           <li key={id}>
@@ -26,6 +27,7 @@ export const MenuOverlay: React.FC<IMenuOverlayProps> = ({ onClick, open }) => {
           </li>
         ))}
       </ul>
+
       <HeaderLink onClick={onClick} />
       <Sociables onClick={onClick} />
     </div>

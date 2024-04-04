@@ -2,7 +2,7 @@ import Image from "next/image";
 
 import { DrinkList } from "@/components/base/DrinkList";
 import { SectionTitle } from "@/components/ui/SectionTitle";
-import { Circle } from "@/components/ui/Circle/Circle";
+import { Circle } from "@/components/ui/Circle";
 
 import data from "@/data/special.json";
 import { CircleClass } from "@/components/ui/Circle/type";

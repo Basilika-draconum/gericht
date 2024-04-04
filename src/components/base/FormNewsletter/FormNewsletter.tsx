@@ -18,7 +18,7 @@ export const FormNewsletter: React.FC = () => {
   } = useForm<ConfigFormNewsletter>({ mode: "onBlur" });
 
   const onSubmit: SubmitHandler<ConfigFormNewsletter> = (data) => {
-    toast(`I will contact you at the scecified email:${data.email}`);
+    toast(`We will contact you at the specified email:${data.email}`);
     reset();
   };
 
@@ -50,6 +50,7 @@ export const FormNewsletter: React.FC = () => {
           )}
         </div>
       </div>
+
       <Button type="submit" text={button} />
     </form>
   );

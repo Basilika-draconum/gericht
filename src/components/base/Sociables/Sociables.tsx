@@ -21,6 +21,7 @@ export const Sociables: React.FC<SociablesProps> = ({ onClick }) => {
           <Facebook className="hover:text-text-accent" />
         </Link>
       </li>
+
       <li>
         <Link
           href="https://www.twitter.com/"
@@ -32,6 +33,7 @@ export const Sociables: React.FC<SociablesProps> = ({ onClick }) => {
           <Twitter className="hover:text-text-accent" />
         </Link>
       </li>
+
       <li>
         <Link
           href="https://www.instagram.com/"

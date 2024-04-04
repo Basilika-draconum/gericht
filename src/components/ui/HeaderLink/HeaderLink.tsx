@@ -3,7 +3,6 @@
 import { Link } from "react-scroll";
 
 import data from "@/data/header.json";
-
 import { IHeaderLinkProps } from "./types";
 
 export const HeaderLink: React.FC<IHeaderLinkProps> = ({ onClick }) => {

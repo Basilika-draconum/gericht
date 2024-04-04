@@ -2,13 +2,14 @@ import Image from "next/image";
 
 import { Button } from "@/components/ui/Button";
 import { SectionTitle } from "@/components/ui/SectionTitle";
-import { Circle } from "@/components/ui/Circle/Circle";
+import { Circle } from "@/components/ui/Circle";
 
 import data from "@/data/about.json";
 import { CircleClass } from "@/components/ui/Circle/type";
 
 export const About: React.FC = () => {
-  const { title, subtitle, description, button, image1, image2 } = data;
+  const { title, subtitle, description, to, button, image1, image2 } = data;
+
   return (
     <section id="/about" className="section section-bg">
       <div className="container relative">
@@ -39,7 +40,8 @@ export const About: React.FC = () => {
             <p className="font-sans text-text-secondary text-[13px] md:text-[16px] leading-[1.75] tracking-[0.64px] font-normal mb-8">
               {description}
             </p>
-            <Button text={button} type="button" />
+
+            <Button text={button} type="button" to={to} />
           </div>
         </div>
       </div>

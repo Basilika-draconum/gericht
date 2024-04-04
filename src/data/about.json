@@ -3,6 +3,7 @@
   "subtitle": "About Us",
   "description": "Adipiscing tempus ullamcorper lobortis odio tellus arcu volutpat. Risus placerat morbi volutpat habitasse interdum mi aliquam In sed odio nec aliquet.",
   "button": "Know More",
+  "to": "/newsletter",
   "image1": { "alt": "beer", "src": "/images/about-beer@1x.jpg" },
   "image2": { "alt": "coctail", "src": "/images/about-coctail@1x.jpg" }
 }

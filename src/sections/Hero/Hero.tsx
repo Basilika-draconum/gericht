@@ -4,6 +4,7 @@ import data from "@/data/hero.json";
 
 export const Hero = () => {
   const { title, image1 } = data;
+
   return (
     <section className="section-hero section-bg">
       <div className="container">
@@ -14,6 +15,7 @@ export const Hero = () => {
           >
             {title}
           </h1>
+
           <Image
             width={634}
             height={840}

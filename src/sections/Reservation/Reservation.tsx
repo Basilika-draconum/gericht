@@ -1,12 +1,12 @@
 import { FormReservation } from "@/components/base/FormReservation";
 import { SectionTitle } from "@/components/ui/SectionTitle";
-import { Circle } from "@/components/ui/Circle/Circle";
+import { Circle } from "@/components/ui/Circle";
 
 import data from "@/data/reservation.json";
 import { CircleClass } from "@/components/ui/Circle/type";
 
 export const Reservation = () => {
-  const { title, subTitle, button } = data;
+  const { title, subTitle } = data;
 
   return (
     <section id="/reservation" className="section bg-bg-main">
@@ -19,7 +19,7 @@ export const Reservation = () => {
             subtitle={subTitle}
             className="items-center"
           />
-          <FormReservation button={button} />
+          <FormReservation />
         </div>
       </div>
     </section>

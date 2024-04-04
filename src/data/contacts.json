@@ -8,5 +8,6 @@
     "weekend": "Sat - Sun: 10:00 am - 03:00 am"
   },
   "button": "Visit Us",
-  "image1x": { "alt": "coctail", "src": "/images/contact-coctail@1x.jpg" }
+  "image1x": { "alt": "coctail", "src": "/images/contact-coctail@1x.jpg" },
+  "to": "/footer"
 }

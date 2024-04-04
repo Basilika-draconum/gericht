@@ -1,6 +1,6 @@
 import { SectionTitle } from "@/components/ui/SectionTitle";
-import { FormNewsletter } from "@/components/base/FormNewsletter/FormNewsletter";
-import { Circle } from "@/components/ui/Circle/Circle";
+import { FormNewsletter } from "@/components/base/FormNewsletter";
+import { Circle } from "@/components/ui/Circle";
 
 import data from "@/data/newsletter.json";
 import { CircleClass } from "@/components/ui/Circle/type";
@@ -9,7 +9,7 @@ export const Newsletter: React.FC = () => {
   const { title, subtitle, slogan } = data;
 
   return (
-    <section className="pt-[50px] md:pt-[100px] bg-bg-main">
+    <section id="/newsletter" className="pt-[50px] md:pt-[100px] bg-bg-main">
       <div className="container relative">
         <Circle currentClass={CircleClass.ClassRight} />
 
