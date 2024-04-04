@@ -53,7 +53,7 @@ export const FormReservation: React.FC = () => {
                 <Select
                   {...field}
                   size="medium"
-                  sx={{ minWidth: 300, color: "#F5EFDB" }}
+                  sx={{ minWidth: 290, color: "#F5EFDB" }}
                   MenuProps={{
                     PaperProps: {
                       sx: {
@@ -101,7 +101,7 @@ export const FormReservation: React.FC = () => {
                 <Select
                   {...field}
                   size="medium"
-                  sx={{ minWidth: 320, color: "#F5EFDB" }}
+                  sx={{ minWidth: 290, color: "#F5EFDB" }}
                   MenuProps={{
                     PaperProps: {
                       sx: {
@@ -147,7 +147,7 @@ export const FormReservation: React.FC = () => {
               <LocalizationProvider dateAdapter={AdapterDayjs}>
                 <DatePicker
                   sx={{
-                    minWidth: 320,
+                    minWidth: 290,
                     "& .MuiOutlinedInput-root .MuiOutlinedInput-notchedOutline":
                       { border: "1px solid #f5efdb" },
                     "& .MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline":

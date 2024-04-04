@@ -9,7 +9,7 @@ export const Newsletter: React.FC = () => {
   const { title, subtitle, slogan } = data;
 
   return (
-    <section className="pt-[50px] md:pt-[100px] bg-bg-main">
+    <section id="/newsletter" className="pt-[50px] md:pt-[100px] bg-bg-main">
       <div className="container relative">
         <Circle currentClass={CircleClass.ClassRight} />
 
