@@ -7,7 +7,7 @@ export const Poison: React.FC = () => {
   const { title, subtitle } = data;
 
   return (
-    <section id="/poisons" className="section">
+    <section id="/poisons" className="section md:pb-0">
       <div className="container">
         <div className="flex flex-col items-center justify-center gap-[34px] md:gap-[64px]">
           <SectionTitle
