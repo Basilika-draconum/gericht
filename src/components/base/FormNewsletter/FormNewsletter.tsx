@@ -26,7 +26,7 @@ export const FormNewsletter: React.FC = () => {
     <form
       action="#"
       onSubmit={handleSubmit(onSubmit)}
-      className="w-full flex  gap-8 items-center justify-center"
+      className="w-full flex flex-col sm:flex-row  gap-8 items-center justify-center"
     >
       <div className=" flex flex-col w-full xl:w-[796px] relative">
         <input
