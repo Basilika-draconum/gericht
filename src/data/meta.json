@@ -1,0 +1,67 @@
+{
+  "title": "Gericht",
+  "description": "This website allows you to book a table at the Gericht restaurant for any convenient date. Additionally, you can create your personalized menu by selecting dishes according to their prices. You can also find us on other social media platforms and leave your contact information for us to get in touch with you.",
+  "keywords": "restaurant, menu, reservation, dishes, cuisine, dining, food, chef, fine dining, gourmet, drinks, beverages, cocktails, alcoholic beverages, non-alcoholic beverages, bar, wine, beer, spirits, mixed drinks",
+  "manifest": "/meta/site.webmanifest",
+  "twitter": {
+    "title": "Gericht",
+    "card": "summary_large_image",
+    "description": "This website allows you to book a table at the Gericht restaurant for any convenient date. Additionally, you can create your personalized menu by selecting dishes according to their prices. You can also find us on other social media platforms and leave your contact information for us to get in touch with you.",
+    "images": [
+      {
+        "url": "/meta/ogp-image.jpg",
+        "width": 1440,
+        "height": 730,
+        "alt": "Gericht. With ease, you will be able to plan your evenings and indulge in the refined cuisine of the Gericht establishment."
+      }
+    ]
+  },
+  "openGraph": {
+    "title": "Gericht",
+    "description": "This website allows you to book a table at the Gericht restaurant for any convenient date. Additionally, you can create your personalized menu by selecting dishes according to their prices. You can also find us on other social media platforms and leave your contact information for us to get in touch with you.",
+    "siteName": "Gericht",
+    "locale": "en_US",
+    "type": "website",
+    "images": [
+      {
+        "url": "/meta/ogp-image.jpg",
+        "width": 1440,
+        "height": 730,
+        "alt": "Gericht. With ease, you will be able to plan your evenings and indulge in the refined cuisine of the Gericht establishment."
+      }
+    ]
+  },
+  "icons": {
+    "icon": [
+      {
+        "url": "/meta/favicon.ico"
+      },
+      {
+        "url": "/meta/favicon-16x16.png",
+        "sizes": "16x16",
+        "type": "image/png"
+      },
+      {
+        "url": "/meta/favicon-32x32.png",
+        "sizes": "32x32",
+        "type": "image/png"
+      },
+      {
+        "url": "/meta/favicon-66x64.png",
+        "sizes": "66x64",
+        "type": "image/png"
+      },
+      {
+        "url": "/meta/android-icon-192x192.png",
+        "sizes": "192x192",
+        "type": "image/png"
+      }
+    ]
+  },
+  "shortcut": "/meta/favicon.ico",
+  "apple": "/meta/apple-touch-icon.png",
+  "other": {
+    "rel": "/meta/apple-touch-icon.png",
+    "url": "/meta/apple-touch-icon.png"
+  }
+}

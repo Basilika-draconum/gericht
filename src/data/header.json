@@ -13,5 +13,5 @@
     { "title": "Contact Us", "href": "/contact", "id": "4" }
   ],
   "linkToTable": { "title": "Book Table", "href": "/reservation" },
-  "buttonToggle": { "titleOpen": "Open", "titleClose": "Close" }
+  "buttonToggle": { "titleOpen": "Menu", "titleClose": "Close" }
 }
